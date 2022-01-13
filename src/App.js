@@ -1,7 +1,11 @@
 import Countdown from "./components/Countdown.page";
 import "./App.css";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    document.title = "SmartPets";
+  }, []);
   return (
     <div
       style={{
